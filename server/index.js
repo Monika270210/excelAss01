@@ -21,10 +21,6 @@ mongoose.connect(process.env.DATABASE_CONNECTION_URL,{useNewUrlParser:true,useUn
     console.log("Connected to the database successfully...");
 });
 
-app.get('/',(req,res)=>{
-    // console.log("sending something");
-    res.send("sending something");
-})
 
 app.use('/data',Dataroute);
 
